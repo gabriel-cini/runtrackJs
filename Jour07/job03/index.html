@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="light-blue darken-4">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Inscription</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="section container">
+            
+            <h2 class="header">Créez votre compte</h2>
+            <form>
+                <div class="row">
+                    
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" id="prenom" name="prenom" class="validate" required>
+                        <label for="prenom">Prénom</label>
+                    </div>
+                    <!-- Champ Nom -->
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_box</i>
+                        <input type="text" id="nom" name="nom" class="validate" required>
+                        <label for="nom">Nom</label>
+                    </div>
+                    <!-- Champ Adresse -->
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">home</i>
+                        <input type="text" id="adresse" name="adresse" class="validate" required>
+                        <label for="adresse">Adresse</label>
+                    </div>
+                    <!-- Champ Email -->
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email" name="email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input type="password" id="password" name="password" class="validate" required>
+                        <label for="password">Mot de passe</label>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock_outline</i>
+                        <input type="password" id="confirm-password" name="confirm-password" class="validate" required>
+                        <label for="confirm-password">Confirmez le mot de passe</label>
+                    </div>
+                    <!-- Passions -->
+                    <div class="col s12">
+                        <label>Passions:</label>
+                        <p><label><input type="checkbox" name="passions" value="informatique"><span>Informatique</span></label></p>
+                        <p><label><input type="checkbox" name="passions" value="voyages"><span>Voyages</span></label></p>
+                        <p><label><input type="checkbox" name="passions" value="sport"><span>Sport</span></label></p>
+                        <p><label><input type="checkbox" name="passions" value="lecture"><span>Lecture</span></label></p>
+                    </div>
+                    <!-- Bouton de validation -->
+                    <div class="input-field col s12">
+                        <button type="submit" class="btn waves-effect waves-light right light-blue darken-4">Valider<i class="material-icons right">send</i></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer light-blue darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">Utilisez cette zone pour placer votre contenu de pied de page.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Liens</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Accueil</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inscription</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Connexion</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Rechercher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
